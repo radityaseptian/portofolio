@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { animation } from "../string"
+import { animation } from "../config/string"
 
 export default function HeaderAnimation({description}) {
   let value = animation(description)

@@ -1,4 +1,6 @@
 import Header from '../layouts/Header'
+import ProjectCard from '../components/ProjectCard'
+import { projects } from '../config/projects'
 
 export default function Projects() {
   return (
@@ -9,6 +11,26 @@ export default function Projects() {
           title2={' Works'}
           description={"Here are a few projects I've worked on recently."}
         />
+        <section className='bg-white/5 px-4 md:px-8 pt-20 pb-10 md:pt-28'>
+          <div className='container max-w-3xl mx-auto text-black'>
+            <div>
+              {projects.map((item, i) => {
+                return (
+                  <ProjectCard
+                    key={i}
+                    build={item.build}
+                    hrefDemo={item.hrefDemo}
+                    hrefRepo={item.hrefRepo}
+                    image={item.image}
+                    title={item.title}
+                  >
+                    {item.description}
+                  </ProjectCard>
+                )
+              })}
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )

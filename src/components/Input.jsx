@@ -7,7 +7,7 @@ export default function Input({ type, placeholder, name, id }) {
         type={type}
         id={id}
         placeholder={placeholder}
-        className='bg-zinc-700 px-3 py-2 rounded border-[1.3px] border-zinc-600'
+        className='bg-zinc-700 px-3 py-2 rounded border-[1.3px] border-zinc-600 invalid:border-red-600 invalid:text-red-500'
       />
     </label>
   )

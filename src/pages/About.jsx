@@ -2,7 +2,7 @@ import Header from '../layouts/Header'
 import about from '../assets/about.png'
 import Activities from '../components/Activities'
 import ButtonSkills from '../components/ButtonSkils'
-import { skills } from '../skills'
+import { skills } from '../config/skills'
 import { useState } from 'react'
 import Card from '../components/Card'
 

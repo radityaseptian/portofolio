@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { navLists } from '../navLists'
+import { navLists } from '../config/navLists'
 import NavItem from '../components/NavItem'
 import { Link } from 'react-router-dom'
 import NavItemMobile from '../components/NavItemMobile'

@@ -3,12 +3,19 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <>
       <div className='bg-zinc-800 text-white min-h-screen grid'>
         <Navbar />
         <div className='container mx-auto pb-20'>
-          <form className='px-2 mx-auto max-w-xl font-poppins text-xs md:text-sm'>
+          <form
+            onSubmit={handleSubmit}
+            className='px-2 mx-auto max-w-xl font-poppins text-xs md:text-sm'
+          >
             <h3 className='text-2xl md:text-3xl pb-8'>Contact Form</h3>
             <div className='sm:flex gap-4'>
               <Input
@@ -34,7 +41,7 @@ export default function Contact() {
                 className='bg-zinc-700 px-3 py-2 rounded border-[1.3px] border-zinc-600'
               ></textarea>
             </label>
-            <Button>Send</Button>
+            <Button type='submit'>Send</Button>
           </form>
         </div>
       </div>
