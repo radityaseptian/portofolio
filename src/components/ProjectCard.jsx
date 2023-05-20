@@ -16,26 +16,26 @@ export default function ProjectCard({
       <div className='py-4'>
         <div className='flex justify-between items-center'>
           <h3 className='text-xl text-white'>{title}</h3>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-1 self-start'>
             <a
               href={hrefRepo}
               className='hover:bg-zinc-800 rounded-md px-3 py-2 text-white'
             >
-              <BiGitRepoForked />
+              <BiGitRepoForked className='h-5 w-5' />
             </a>
             <a
               href={hrefDemo}
               className='hover:bg-zinc-800 rounded-md px-3 py-2'
             >
-              <GrShare className='icon' />
+              <GrShare className='icon h-5 w-5' />
             </a>
           </div>
         </div>
-        <p className='py-4 md:py-5 text-sm md:text-base flex flex-col'>
+        <p className='py-4 md:py-5 flex flex-col'>
           <span className='text-white'>Description:</span>
           <span>{children}</span>
         </p>
-        <p className='text-sm md:text-base flex flex-col'>
+        <p className='flex flex-col'>
           <span className='text-white'>Tech stack:</span>
           <span>{build}</span>
         </p>
