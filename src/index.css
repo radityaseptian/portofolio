@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'poppins', sans-serif;
+  src: url('../src/assets/fonts/Poppins-Regular.ttf');
+}
+/* FOR SOME ICON, BECAUSE NOT WORKING COLOR CHANGE */
+.icon path {
+  stroke: #fff;
+}
