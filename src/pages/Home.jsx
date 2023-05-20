@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className='bg-zinc-800 text-white'>
         <Header home={true} title1={'RADITYA'} title2={' M. SEPTIAN'} />
-        <section className='bg-white/5 py-20 md:pt-28'>
+        <section className='bg-white/5 pt-20 pb-28 md:py-28'>
           <div className='container max-w-6xl mx-auto px-4 md:px-8'>
             <h2 className='text-3xl md:text-4xl text-center'>
               Let Me <span>Introduce</span> Myself

@@ -14,9 +14,9 @@ export default function Contact() {
         <div className='container mx-auto pb-20'>
           <form
             onSubmit={handleSubmit}
-            className='px-2 mx-auto max-w-xl font-poppins text-xs md:text-sm'
+            className='px-2 mx-auto max-w-xl font-poppins text-sm'
           >
-            <h3 className='text-2xl md:text-3xl pb-8'>Contact Form</h3>
+            <h3 className='text-3xl md:text-4xl pb-8'>Contact Form</h3>
             <div className='sm:flex gap-4'>
               <Input
                 id={'name'}
