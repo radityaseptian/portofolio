@@ -1,4 +1,5 @@
 import Header from '../layouts/Header'
+import Footer from '../layouts/Footer'
 import avatar from '../assets/avatar.svg'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
@@ -7,9 +8,9 @@ import { GrLinkedinOption } from 'react-icons/gr'
 export default function Home() {
   return (
     <>
-      <div className='bg-zinc-800 text-white'>
+      <div className='text-white bg-zinc-800'>
         <Header home={true} title1={'RADITYA'} title2={' M. SEPTIAN'} />
-        <section className='bg-white/5 pt-20 pb-28 md:py-28'>
+        <section className='bg-primary/70 pt-20 pb-28 md:py-28'>
           <div className='container max-w-6xl mx-auto px-4 md:px-8'>
             <h2 className='text-3xl md:text-4xl text-center'>
               Let Me <span>Introduce</span> Myself
@@ -68,6 +69,7 @@ export default function Home() {
             </center>
           </div>
         </section>
+        <Footer />
       </div>
     </>
   )

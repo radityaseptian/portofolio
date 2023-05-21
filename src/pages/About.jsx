@@ -1,4 +1,5 @@
 import Header from '../layouts/Header'
+import Footer from '../layouts/Footer'
 import about from '../assets/about.png'
 import Activities from '../components/Activities'
 import ButtonSkills from '../components/ButtonSkils'
@@ -20,7 +21,7 @@ export default function About() {
           title2={' Who I Am'}
           description={'Want To Know More About Me?'}
         />
-        <section className='md:px-8 px-4 pt-20 pb-10 md:pt-28 bg-white/5'>
+        <section className='md:px-8 px-4 pt-20 pb-10 md:pt-28 bg-primary/70'>
           <div className='container max-w-6xl mx-auto'>
             <h2 className='text-3xl md:text-4xl text-center'>
               Know Who <span>I&apos;m</span>
@@ -33,6 +34,11 @@ export default function About() {
                   website developer, but I&apos;m more skilled at frontend.
                 </p>
                 <p>
+                  My interest is to become a <span>fullstackweb developer</span>
+                  . I believe through constant practicing, I will achieve my
+                  dream.
+                </p>
+                <p>
                   Apart from coding, some other activities that I love to do!
                 </p>
                 <ul>
@@ -41,13 +47,13 @@ export default function About() {
                   <Activities>Writing Tech Blogs</Activities>
                 </ul>
               </div>
-              <center className='max-w-md self-center pt-4 md:pt-0'>
+              <center className='max-w-md self-center pt-3'>
                 <img src={about} alt='About' />
               </center>
             </div>
           </div>
         </section>
-        <section className='bg-white/5 pb-36 md:px-8 px-4'>
+        <section className='bg-primary/70 pb-36 md:px-8 px-4'>
           <div className='container max-w-6xl mx-auto'>
             <h2 className='text-3xl md:text-4xl'>Skills</h2>
             <div>
@@ -58,7 +64,9 @@ export default function About() {
                       <li key={item.name}>
                         <ButtonSkills
                           className={
-                            show == item.name ? 'bg-sky-600' : 'bg-transparent'
+                            show == item.name
+                              ? 'bg-[#623686]'
+                              : 'bg-transparent'
                           }
                           onClick={() => getName(item.name)}
                         >
@@ -106,6 +114,7 @@ export default function About() {
             </div>
           </div>
         </section>
+        <Footer /> 
       </div>
     </>
   )

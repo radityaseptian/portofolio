@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <>
       <div onClick={scrollTop} className='bg-black/50 fixed bottom-2 right-14'>
-        <h1>oke</h1>
+        <div>scroll</div>
       </div>
     </>
   )

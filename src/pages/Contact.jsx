@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className='bg-zinc-800 text-white min-h-screen grid'>
+      <div className='bg-primary text-white min-h-screen grid bg-gradient-to-t from-[#0c1829] to-black/30'>
         <Navbar />
         <div className='container mx-auto pb-20'>
           <form
@@ -32,13 +32,13 @@ export default function Contact() {
               />
             </div>
             <label htmlFor='message' className='flex flex-col pb-4'>
-              <span className='py-2'>Message</span>
+              <span className='py-2 text-white'>Message</span>
               <textarea
                 id='message'
                 cols='30'
                 rows='2'
                 placeholder='Enter your message'
-                className='bg-zinc-700 px-3 py-2 rounded border-[1.3px] border-zinc-600'
+                className='bg-black/10 px-3 py-2 rounded border-[1.3px] border-primary/40'
               ></textarea>
             </label>
             <Button type='submit'>Send</Button>

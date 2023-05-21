@@ -14,7 +14,7 @@ export default function HomeTypeAnimation() {
       wrapper='span'
       cursor={true}
       repeat={Infinity}
-      className='text-xl md:text-2xl md:pl-1'
+      className='text-xl md:text-2xl md:pl-1 text-primary'
     />
   )
 }

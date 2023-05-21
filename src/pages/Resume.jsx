@@ -5,7 +5,7 @@ import { AiOutlineDownload } from 'react-icons/ai'
 export default function Resume() {
   return (
     <>
-      <div className='bg-zinc-800 text-white min-h-screen'>
+      <div className='bg-primary text-white min-h-screen bg-gradient-to-t from-[#0A192F] to-black/30'>
         <Navbar />
         <div className='py-6 px-2 container max-w-6xl mx-auto'>
           <center>
@@ -14,7 +14,7 @@ export default function Resume() {
               <AiOutlineDownload />
             </Button>
           </center>
-          <div className='p-6'>{/* PDF RESUME */}</div>
+          <div className='py-6'>{/* PDF RESUME */}</div>
           <center>
             <Button>
               Download
