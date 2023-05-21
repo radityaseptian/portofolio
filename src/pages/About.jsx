@@ -53,7 +53,7 @@ export default function About() {
             </div>
           </div>
         </section>
-        <section className='bg-primary/70 pb-36 md:px-8 px-4'>
+        <section className='bg-primary/70 pb-36 md:px-8 px-4 border-b-8 border-primary'>
           <div className='container max-w-6xl mx-auto'>
             <h2 className='text-3xl md:text-4xl'>Skills</h2>
             <div>

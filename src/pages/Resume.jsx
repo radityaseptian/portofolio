@@ -7,21 +7,23 @@ export default function Resume() {
     <>
       <div className='bg-primary text-white min-h-screen bg-gradient-to-t from-[#0A192F] to-black/30'>
         <Navbar />
-        <div className='py-6 px-2 container max-w-6xl mx-auto'>
-          <center>
-            <Button>
-              Download
-              <AiOutlineDownload />
-            </Button>
-          </center>
-          <div className='py-6'>{/* PDF RESUME */}</div>
-          <center>
-            <Button>
-              Download
-              <AiOutlineDownload />
-            </Button>
-          </center>
-        </div>
+        <section className='border-b-8 border-primary min-h-screen'>
+          <div className='py-6 px-2 container max-w-6xl mx-auto'>
+            <center>
+              <Button>
+                Download
+                <AiOutlineDownload />
+              </Button>
+            </center>
+            <div className='py-6'>{/* PDF RESUME */}</div>
+            <center>
+              <Button>
+                Download
+                <AiOutlineDownload />
+              </Button>
+            </center>
+          </div>
+        </section>
       </div>
     </>
   )

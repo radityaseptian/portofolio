@@ -14,11 +14,9 @@ export default function NavItem({ children, href, delay, icon: Icon }) {
         transitionDelay: `${delay}ms`,
         transitionTimingFunction: 'ease-out',
       }}
-      className={
-        initAnimation
-          ? 'transition-all duration-500 opacity-0 translate-x-32'
-          : 'group transition-all duration-500 opacity-100 translate-y-0'
-      }
+      className={`${
+        initAnimation ? 'opacity-0 translate-x-32' : 'opacity-100 translate-y-0'
+      } group transition-all duration-500`}
     >
       <Link
         to={href}

@@ -12,13 +12,14 @@ export default function Projects() {
           title2={' Works'}
           description={"Here are a few projects I've worked on recently."}
         />
-        <section className='bg-primary/70 px-4 md:px-8 pt-20 pb-10 md:pt-28'>
+        <section className='bg-primary/70 px-4 md:px-8 pt-20 pb-10 md:pt-28 border-b-8 border-primary'>
           <div className='container max-w-3xl mx-auto text-black'>
             <div>
-              {projects.map((item, i) => {
+              {projects.map((item) => {
                 return (
                   <ProjectCard
-                    key={i}
+                    id={item.id}
+                    key={item.id}
                     build={item.build}
                     hrefDemo={item.hrefDemo}
                     hrefRepo={item.hrefRepo}

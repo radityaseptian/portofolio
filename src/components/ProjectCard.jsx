@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { BiGitRepoForked } from 'react-icons/bi'
 import { BsArrowRight } from 'react-icons/bs'
+import { useInView } from 'react-intersection-observer'
 
 export default function ProjectCard({
   image,
@@ -9,9 +10,14 @@ export default function ProjectCard({
   build,
   hrefDemo,
   hrefRepo,
+  id,
 }) {
+  function refference(params) {
+    const [ref, inView, entry] = useInView()
+  }
+
   return (
-    <div className='mb-20'>
+    <div className='mb-20 translate-y-20 duration-700 transition-all' ref={id}>
       <img src={image} alt={title} title={title} />
       <div className='py-4'>
         <div className='flex justify-between items-center'>
