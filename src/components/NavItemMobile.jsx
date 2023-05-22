@@ -6,6 +6,7 @@ export default function NavItemMobile({ href, children, icon: Icon,className }) 
     <li className='w-full'>
       <Link
         to={href}
+        target={children !== 'Blogs' ? '_self' : '_blank'}
         className={`${className} flex flex-col items-center justify-center pt-2 pb-1 hover:bg-black/50 rounded`}
       >
         <Icon className='icon w-5 h-5' />
