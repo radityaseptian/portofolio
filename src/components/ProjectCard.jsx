@@ -21,7 +21,7 @@ export default function ProjectCard({
 
   return (
     <>
-      <div className='mb-20' data-aos='fade-up'>
+      <div className='mb-20' data-aos='fade-up' data-aos-duration="1300">
         <img src={image} alt={title} title={title} loading='lazy' />
         <div className='py-4'>
           <div className='flex justify-between items-center'>
