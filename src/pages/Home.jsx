@@ -49,7 +49,6 @@ export default function Home() {
               <div className='flex gap-8 justify-center'>
                 <a
                   href='/#'
-                  // WAIT FOR SECOND
                   // target='_blank'
                   // rel='noreferrer'
                 >
