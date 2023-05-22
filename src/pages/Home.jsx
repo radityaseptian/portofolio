@@ -4,12 +4,17 @@ import avatar from '../assets/avatar.svg'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
 import { GrLinkedinOption } from 'react-icons/gr'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className='text-white bg-zinc-800'>
-        <Header home={true} title1={'RADITYA'} title2={' M. SEPTIAN'} />
+        <Header home={true} title={'RADITYA M. SEPTIAN'} />
         <section className='bg-primary/70 pt-20 pb-28 md:py-28 border-b-8 border-primary'>
           <div className='container max-w-6xl mx-auto px-4 md:px-8'>
             <h2 className='text-3xl md:text-4xl text-center'>
@@ -43,29 +48,29 @@ export default function Home() {
               </p>
               <div className='flex gap-8 justify-center'>
                 <a
+                  href='/#'
+                  // WAIT FOR SECOND
+                  // target='_blank'
+                  // rel='noreferrer'
+                >
+                  <FaFacebookF className='cursor-pointer w-5 h-5 bg-[#3b5998] hover:rounded-xl rounded-md box-content p-2' />
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/raditya-septian-3a9768277/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <GrLinkedinOption className='cursor-pointer w-5 h-5 bg-[#0e76a8] hover:rounded-xl rounded-md box-content p-2' />
+                </a>
+                <a
                   href='https://github.com/radityaseptian'
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <AiOutlineGithub className='cursor-pointer w-5 h-5 bg-white/10 hover:rounded-xl rounded-md box-content p-2' />
-                </a>
-                <a
-                  href='/#'
-                  // WAIT FOR SECOND
-                  // target='_blank'
-                  // rel='noreferrer'
-                >
-                  <FaFacebookF className='cursor-pointer w-5 h-5 bg-white/10 hover:rounded-xl rounded-md box-content p-2' />
-                </a>
-                <a
-                  href='/#'
-                  // WAIT FOR SECOND
-                  // target='_blank'
-                  // rel='noreferrer'
-                >
-                  <GrLinkedinOption className='cursor-pointer w-5 h-5 bg-white/10 hover:rounded-xl rounded-md box-content p-2' />
+                  <AiOutlineGithub className='cursor-pointer w-5 h-5 bg-black hover:rounded-xl rounded-md box-content p-[8.7px]' />
                 </a>
               </div>
+              <p className='py-5'>radityaseptian1551@gmail.com</p>
             </center>
           </div>
         </section>

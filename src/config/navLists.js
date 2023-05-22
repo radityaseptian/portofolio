@@ -23,7 +23,7 @@ export const navLists = [
   },
   {
     name: 'Blogs',
-    href: '#',
+    href: 'https://google.com',
     icon: ImBlog,
   },
   {

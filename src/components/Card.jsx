@@ -6,6 +6,7 @@ export default function Card({ icon, title }) {
         src={icon}
         alt={title}
         title={title}
+        loading='lazy'
         className='h-full w-full p-2 px-4'
       />
     </div>

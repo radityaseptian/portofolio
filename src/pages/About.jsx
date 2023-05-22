@@ -6,6 +6,7 @@ import ButtonSkills from '../components/ButtonSkils'
 import { skills } from '../config/skills'
 import { useState } from 'react'
 import Card from '../components/Card'
+import { useEffect } from 'react'
 
 export default function About() {
   const [show, setShow] = useState('Language')
@@ -13,12 +14,15 @@ export default function About() {
     setShow(name)
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className='bg-zinc-800 text-white'>
         <Header
-          title1={'About'}
-          title2={' Who I Am'}
+          title={'About Who I Am'}
           description={'Want To Know More About Me?'}
         />
         <section className='md:px-8 px-4 pt-20 pb-10 md:pt-28 bg-primary/70'>
@@ -114,7 +118,7 @@ export default function About() {
             </div>
           </div>
         </section>
-        <Footer /> 
+        <Footer />
       </div>
     </>
   )

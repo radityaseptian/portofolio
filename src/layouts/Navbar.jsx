@@ -25,8 +25,8 @@ export default function Navbar() {
             })}
           </ul>
         </div>
-        <div className='sm:hidden fixed w-full bottom-0 shadow-white bg-zinc-900 z-20 shadow-xl'>
-          <ul className='flex items-center justify-between gap-1 border-t-[1px] border-zinc-600'>
+        <div className='sm:hidden fixed w-full bottom-0 shadow-white bg-zinc-800 z-20 shadow-xl'>
+          <ul className='flex items-center justify-between gap-1 border-t-[1px] border-zinc-500'>
             {navLists.map((item) => {
               return (
                 <NavItemMobile

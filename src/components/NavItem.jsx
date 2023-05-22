@@ -20,6 +20,7 @@ export default function NavItem({ children, href, delay, icon: Icon }) {
     >
       <Link
         to={href}
+        target={children !== 'Blogs' ? '_self' : '_blank'}
         className="relative flex justify-center items-center gap-1 py-1 after:content-[''] after:absolute after:w-0 after:h-[.20rem] after:-bottom-[.020rem] after:bg-secondary group-hover:after:w-full after:rounded after:transition-all after:duration-500"
       >
         <Icon className='icon' />

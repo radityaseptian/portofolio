@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
-import { animation } from '../config/string'
 import { useState, useEffect } from 'react'
+function animation(string) {
+  return string.split(' ')
+}
 
 export default function HeaderAnimation({ description }) {
   let delay = 0

@@ -2,7 +2,6 @@ import zeitplan from '../assets/projects/zeitplan.png'
 
 export const projects = [
   {
-    id: 'shiganime',
     title: 'Shiganime Streaming Anime',
     description: 'Website application to streaming all anime what you want',
     build: 'React.js, TailwindCSS, Public Api',
@@ -11,7 +10,6 @@ export const projects = [
     hrefDemo: 'https://shiganime-en.vercel.app/',
   },
   {
-    id: 'zeitplan',
     title: 'Shiganime Streaming Anime',
     description: 'Website application to streaming all anime what you want',
     build: 'React.js, TailwindCSS, Public Api',
@@ -20,7 +18,6 @@ export const projects = [
     hrefDemo: 'https://shiganime-en.vercel.app/',
   },
   {
-    id: 'blog',
     title: 'Shiganime Streaming Anime',
     description: 'Website application to streaming all anime what you want',
     build: 'React.js, TailwindCSS, Public Api',
@@ -29,7 +26,6 @@ export const projects = [
     hrefDemo: 'https://shiganime-en.vercel.app/',
   },
   {
-    id: 'portofolio',
     title: 'Shiganime Streaming Anime',
     description: 'Website application to streaming all anime what you want',
     build: 'React.js, TailwindCSS, Public Api',
