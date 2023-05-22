@@ -16,12 +16,16 @@ export default function ProjectCard({
   hrefRepo,
 }) {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+      delay: 200,
+      duration: 1200,
+    })
   }, [])
 
   return (
     <>
-      <div className='mb-20' data-aos='fade-up' data-aos-duration="1300">
+      <div className='mb-20' data-aos='fade-up'>
         <img src={image} alt={title} title={title} loading='lazy' />
         <div className='py-4'>
           <div className='flex justify-between items-center'>
