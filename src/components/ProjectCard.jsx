@@ -3,9 +3,7 @@
 /* eslint-disable react/prop-types */
 import { BiGitRepoForked } from 'react-icons/bi'
 import { BsArrowRight } from 'react-icons/bs'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react'
 
 export default function ProjectCard({
   image,
@@ -15,13 +13,6 @@ export default function ProjectCard({
   hrefDemo,
   hrefRepo,
 }) {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      delay: 200,
-      duration: 1200,
-    })
-  }, [])
 
   return (
     <>

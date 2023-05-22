@@ -3,10 +3,16 @@ import Footer from '../layouts/Footer'
 import ProjectCard from '../components/ProjectCard'
 import { projects } from '../config/projects'
 import { useEffect } from 'react'
+import AOS from 'aos'
 
 export default function Projects() {
   useEffect(() => {
     window.scrollTo(0, 0)
+    AOS.init({
+      once: true,
+      delay: 200,
+      duration: 1000,
+    })
   }, [])
 
   return (
