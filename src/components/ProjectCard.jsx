@@ -28,7 +28,7 @@ export default function ProjectCard({
                 rel='noreferrer'
                 className='hover:bg-black/50 bg-black/30  rounded-md px-3 py-2 text-white'
               >
-                <BiGitRepoForked className='h-5 w-5' />
+                <BiGitRepoForked className='h-6 w-5' />
               </a>
               <a
                 href={hrefDemo}
