@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h3 align="center">My Personal Protofolio</h3>
+  <h1 align="center">My Personal Protofolio</h1>
   <p align="center">
     An awesome Portofolio website!
     <br />
@@ -50,7 +50,11 @@ This is an example of how to list things you need to use the software and how to
    ```
 3. Running the program
    ```js
-   just type `npm run dev` and open browser `http://localhost:5173`
+   npm run dev
+   ```
+3. See running programs
+   ```js
+   http://localhost:5173
    ```
 
 <!-- CONTACT -->
