@@ -48,9 +48,9 @@ export default function Home() {
               </p>
               <div className='flex gap-8 justify-center'>
                 <a
-                  href='/#'
-                  // target='_blank'
-                  // rel='noreferrer'
+                  href='https://www.facebook.com/profile.php?id=100093066214468'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <FaFacebookF className='cursor-pointer w-5 h-5 bg-[#3b5998] hover:rounded-xl rounded-md box-content p-2' />
                 </a>
