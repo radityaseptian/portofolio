@@ -4,7 +4,7 @@
   <p align="center">
     An awesome Portofolio website!
     <br />
-    <a href="https://radityaseptian.vercel.app/"><strong>View Demo »</strong></a>
+    <a href="https://radityaseptian.my.id/"><strong>View Demo »</strong></a>
   </p>
 </div>
 
