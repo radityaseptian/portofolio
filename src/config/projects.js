@@ -13,6 +13,14 @@ export const projects = [
     hrefDemo: 'https://shiganime-en.vercel.app/',
   },
   {
+    title: 'Personal Blogs Website',
+    description: 'A Simple Web To Write And Share My Articles About Technology',
+    build: 'React.js, Tailwind, Vite, Express.js, MongoDB',
+    image: blog,
+    hrefRepo: '#',
+    hrefDemo: '#',
+  },
+  {
     title: 'The Zeitplan',
     description:
       'Slicing website design figma into landing page website,this website using design codedesign.dev',
@@ -28,13 +36,5 @@ export const projects = [
     image: portofolio,
     hrefRepo: 'https://github.com/radityaseptian/portofolio',
     hrefDemo: 'https://radityaseptian.my.id/',
-  },
-  {
-    title: 'Personal Blogs Website',
-    description: 'A Simple Web To Write And Share My Articles About Technology',
-    build: 'React.js, Tailwind, Vite, Express.js, MongoDB',
-    image: blog,
-    hrefRepo: '#',
-    hrefDemo: '#',
   },
 ]
