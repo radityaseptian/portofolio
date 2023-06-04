@@ -11,6 +11,7 @@ import linux from '../../src/assets/skills/linux.svg'
 import git from '../../src/assets/skills/git.svg'
 import vscode from '../../src/assets/skills/vscode.svg'
 import postman from '../../src/assets/skills/postman.png'
+import npm from '../../src/assets/skills/npm.svg'
 export const skills = [
   {
     name: 'Language',
@@ -81,6 +82,10 @@ export const skills = [
       {
         icon: postman,
         title: 'Postman',
+      },
+      {
+        icon: npm,
+        title: 'Node Package Manager',
       },
     ],
   },
