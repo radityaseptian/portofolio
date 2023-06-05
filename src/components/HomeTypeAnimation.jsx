@@ -4,7 +4,7 @@ export default function HomeTypeAnimation() {
   return (
     <TypeAnimation
       sequence={[
-        'Junior Full Stack Web Developer',
+        'Entry-level Web Developer',
         4000,
         'MERN Stack',
         2000,
