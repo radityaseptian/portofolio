@@ -17,8 +17,8 @@ export const projects = [
     description: 'A Simple Web To Write And Share My Articles About Technology',
     build: 'React.js, Tailwind, Vite, Express.js, MongoDB',
     image: blog,
-    hrefRepo: '#',
-    hrefDemo: '#',
+    hrefRepo: 'https://radwritter.vercel.app',
+    hrefDemo: 'https://github.com/radityaseptian/blog',
   },
   {
     title: 'The Zeitplan',
