@@ -23,7 +23,7 @@ export const navLists = [
   },
   {
     name: 'Blogs',
-    href: 'https://google.com',
+    href: 'https://radwritter.vercel.app/',
     icon: ImBlog,
   },
   {
