@@ -14,7 +14,7 @@ export default function Resume() {
       <div className='bg-primary text-white min-h-screen bg-gradient-to-t from-[#0A192F] to-black/30'>
         <Navbar />
         <section className='border-b-8 border-primary min-h-screen'>
-          <div className='py-6 px-2 container max-w-5xl mx-auto'>
+          <div className='py-6 pb-20 sm:pb-6 px-2 container max-w-5xl mx-auto'>
             <center>
               <a
                 href='/Raditya-CV.pdf'
