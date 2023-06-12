@@ -4,7 +4,8 @@ import { Input } from '../components/Input'
 import Button from '../components/Button'
 import PopUp from '../components/PopUp'
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai'
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
+import RefreshToTop from '../components/RefreshToTop'
 
 export default function Contact() {
   const [wait, setWait] = useState(false)
@@ -57,12 +58,9 @@ export default function Contact() {
     }
   }
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <>
+      <RefreshToTop />
       <div className='bg-primary relative text-white min-h-screen grid bg-gradient-to-t from-[#0c1829] to-black/30'>
         {succes && <PopUp icon={AiOutlineCheck}>Success!</PopUp>}
         {error && <PopUp icon={AiOutlineClose}>Error!</PopUp>}

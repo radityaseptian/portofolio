@@ -4,15 +4,12 @@ import avatar from '../assets/avatar.svg'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
 import { GrLinkedinOption } from 'react-icons/gr'
-import { useEffect } from 'react'
+import RefreshToTop from '../components/RefreshToTop'
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <>
+    <RefreshToTop />
       <div className='text-white bg-zinc-800'>
         <Header home={true} title={'RADITYA M. SEPTIAN'} />
         <section className='bg-primary/70 pt-20 pb-28 md:py-28 border-b-8 border-primary'>

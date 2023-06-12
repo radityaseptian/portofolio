@@ -1,16 +1,13 @@
 import Navbar from '../layouts/Navbar'
 import Button from '../components/Button'
 import { AiOutlineDownload } from 'react-icons/ai'
-import { useEffect } from 'react'
+import RefreshToTop from '../components/RefreshToTop'
 import img from '/Raditya-CV.png'
 
 export default function Resume() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <>
+      <RefreshToTop />
       <div className='bg-primary text-white min-h-screen bg-gradient-to-t from-[#0A192F] to-black/30'>
         <Navbar />
         <section className='border-b-8 border-primary min-h-screen'>

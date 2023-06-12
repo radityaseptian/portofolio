@@ -4,10 +4,10 @@ import ProjectCard from '../components/ProjectCard'
 import { projects } from '../config/projects'
 import { useEffect } from 'react'
 import AOS from 'aos'
+import RefreshToTop from '../components/RefreshToTop'
 
 export default function Projects() {
   useEffect(() => {
-    window.scrollTo(0, 0)
     AOS.init({
       once: true,
       delay: 200,
@@ -17,6 +17,7 @@ export default function Projects() {
 
   return (
     <>
+      <RefreshToTop />
       <div className='bg-zinc-800 text-white'>
         <Header
           title={'My Recent Works'}

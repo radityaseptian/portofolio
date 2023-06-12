@@ -6,7 +6,7 @@ import ButtonSkills from '../components/ButtonSkils'
 import { skills } from '../config/skills'
 import { useState } from 'react'
 import Card from '../components/Card'
-import { useEffect } from 'react'
+import RefreshToTop from '../components/RefreshToTop'
 
 export default function About() {
   const [show, setShow] = useState('Language')
@@ -14,12 +14,9 @@ export default function About() {
     setShow(name)
   }
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <>
+      <RefreshToTop />
       <div className='bg-zinc-800 text-white'>
         <Header
           title={'About Who I Am'}
@@ -64,20 +61,16 @@ export default function About() {
               <ul className='py-6 flex flex-wrap gap-2'>
                 {skills.map((item) => {
                   return (
-                    <>
-                      <li key={item.name}>
-                        <ButtonSkills
-                          className={
-                            show == item.name
-                              ? 'bg-[#623686]'
-                              : 'bg-transparent'
-                          }
-                          onClick={() => getName(item.name)}
-                        >
-                          {item.name}
-                        </ButtonSkills>
-                      </li>
-                    </>
+                    <li key={item.name}>
+                      <ButtonSkills
+                        className={
+                          show == item.name ? 'bg-[#623686]' : 'bg-transparent'
+                        }
+                        onClick={() => getName(item.name)}
+                      >
+                        {item.name}
+                      </ButtonSkills>
+                    </li>
                   )
                 })}
               </ul>
