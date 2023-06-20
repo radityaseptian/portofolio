@@ -4,8 +4,8 @@ import js from '../../src/assets/skills/js.svg'
 import react from '../../src/assets/skills/react.svg'
 import tailwind from '../../src/assets/skills/tailwind.svg'
 import node from '../../src/assets/skills/nodejs.png'
-import express from '../../src/assets/skills/express.png'
-import vite from '../../src/assets/skills/vite.svg'
+import express from '../../src/assets/skills/express.svg'
+import next from '../../src/assets/skills/next.svg'
 import mongo from '../../src/assets/skills/mongo.svg'
 import linux from '../../src/assets/skills/linux.svg'
 import git from '../../src/assets/skills/git.svg'
@@ -50,8 +50,8 @@ export const skills = [
         title: 'Express.js',
       },
       {
-        icon: vite,
-        title: 'Vite',
+        icon: next,
+        title: 'Next.js',
       },
     ],
   },
