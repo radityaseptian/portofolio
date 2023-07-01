@@ -1,8 +1,8 @@
-import zeitplan from '../assets/projects/zeitplan.png'
-import shiganime from '../assets/projects/shiganime.png'
-import portofolio1 from '../assets/projects/portofolio.png'
-import portofolio2 from '../assets/projects/portofoliov2.png'
-import blog from '../assets/projects/blog.png'
+import zeitplan from '../assets/projects/zeitplan.webp'
+import shiganime from '../assets/projects/shiganime.webp'
+import portofolio1 from '../assets/projects/portofolio.webp'
+import portofolio2 from '../assets/projects/portofolio.v2.webp'
+import blog from '../assets/projects/blog.webp'
 
 export const projects = [
   {
